@@ -18,7 +18,7 @@ public class HelloWorldSpringBoot {
 	}
 	
 	@GetMapping(value="/studentinfo")
-	public List<Student> studentInfo() {
+	public List<Student> studentInfo()  {
 		Student stu = new Student();
 		ArrayList<Student> students = new ArrayList<Student> ();
 		stu.setId(101);
@@ -32,7 +32,7 @@ public class HelloWorldSpringBoot {
 		stu1.setId(102);
 		stu1.setName("Yashika");
 		stu1.setSection("Mango");
-		stu1.setAddress("19, 1st floor, Gods Gift Layout,560049");
+		stu1.setAddress("19, 1st floor, God s Gift Layout,560049");
 		stu1.setSchoolName("Kidzee");
 		students.add(stu1);
 		return students;
